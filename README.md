@@ -5,8 +5,8 @@ Simple CRUD app providing functionalities requiered for user stories.
 ## How to run
 
 * use Maven clean install and bash script start.sh
-* development branch is automatically deployed on Heroku cloud
-https://parkinglotsystem-app.herokuapp.com/
+* {will be updated} <del>development branch is automatically deployed on Heroku cloud
+https://parkinglotsystem-app.herokuapp.com/</del>
 
 ## General requirements
 * System will enable car drivers to start a parking meter, stop the parking meter and check the fee
