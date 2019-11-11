@@ -2,4 +2,14 @@ language: java
 sudo: false
 script: mvn clean verify
 jdk:
-  - openjdk8
+- openjdk8
+deploy:
+  provider: openshift
+  user: m.goworko.pl@gmail.com
+  password:
+    secure: hFbHcj+jic+z7pCS2lOT4t5PrQJ7K1i8aRf5y6fuaFAHmCc2aj7TCq8CauPyd/SiJcmiBXPdVE8D0SlQEoD8J5Iu8s14lCSzyxNPxfaxNMzd4lAPXImIDwZh1W9ubzCvpoROoLs8uOorpTqOzr3X5+b0kUpXuiS+cUCB8cuGZTn6ExH5DOZjQe8Wzp14TZSbI8Fo7eo/1mIOV9gG6UKLH0jJ3Y8M1W8iTPylKpfa34EmZp4b7dW/Cey6gn/VpmQd0w8D8/3VntwM8uLdB3FJ7qQ7XH55AQI4FpvFI4Faw5gKJDTvibw0fIg2//XiTEPUH3MwcCcpSZHNX0ZnB9DP+9qGhWOTantQYwdSSKAxfTH/etdn6EQ+F7ehsbZwSzBNrVVzrC4BDwIrVWZlEW7JVivw2semreb8gZCv4mKilYAVT9giAFdrboI41kWSNahZhA6e7wMKxjYQvBhEZKF93EHNj5cLjC4Z4GhIxuzKVGKgds4lDlxtJAauZ7GBn9Wj9RlpjjSJaHibj0ypBqsOew9umVFCZ53rJKFFrpr++aShA06dZsN/NGIgV5KsT/2eBJ7bqfKxZcwnkFNiJu2k2kHew8gacSj0IXzJXXqeAVt9/qGUHADk0v4ku8HXRTUR5tpiFC1RRr28as0R62cWlf6nBVDO8kHIDd0k4g/qjrM=
+  app: ParkingLotManagementSystem
+  domain: apps.us-east-2.starter.openshift-online.com
+  on:
+    repo: mgoworko/ParkingLotManagementSystem
+    branch: production
